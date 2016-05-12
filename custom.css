@@ -1,0 +1,27 @@
+.center{
+	text-align: center;
+}
+
+.wrapper{
+	width: 60%;
+	margin: 0 auto;
+}
+
+#guessing{
+	padding: 2em;
+	margin-bottom: .5em; 
+}
+
+.btn{
+	margin-bottom: 10px;
+}
+
+
+.btn-xlg {
+    padding: 18px 28px;
+    font-size: 40px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}

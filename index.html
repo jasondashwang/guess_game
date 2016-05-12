@@ -2,12 +2,39 @@
 <html>
 <head>
 	<title>Jason's Guessing Game</title>
-	<link rel="stylesheet" type="text/css" href="custom.css">
+	
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="custom.css">
 </head>
 <body>
-	<h1>Jason's Guessing Game</h1>
+<div class="wrapper">
+	<h1 class="center">Jason's Guessing Game</h1>
+	<p class="center">Try to guess the random number between 0 and 100! You will have 4 guesses total, and I will let you know if you are hot or cold from the actual answer.</p>
+	<div class="jumbotron" id="guessing">
+		<label class="center" for="basic-url">Please guess a digit between 0 and 100</label>
+		<div class="input-group">
+		  <span class="input-group-addon" id="basic-addon1">Your guess</span>
+		  <input type="text" class="form-control" placeholder="0-100" aria-describedby="basic-addon1">
 
+		</div> 
+		<h3 class="center">You're cold / hot with your guess</h3>
+		<h4 class="center">4 Guesses Remaining</h4>
+	</div>
+	<div class="buttons">
+		<div class="row">
+			<div class="col-md-4">
+			</div>
+			<div class="col-md-4 text-center">
+				<button type="button" class="btn btn-xlg btn-primary">Submit</button>
+				<button type="button" class="btn btn-xlg btn-secondary">Restart</button>
+				<button type="button" class="btn btn-xlg btn-danger">Cheat</button>
+			</div>
+			<div class="col-md-4">
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>
