@@ -2,6 +2,19 @@
 	text-align: center;
 }
 
+.victory{
+	color: green;
+
+}
+
+.failure{
+	color: red;
+}
+
+.temphide{
+	display: none;
+}
+
 .wrapper{
 	width: 60%;
 	margin: 0 auto;
