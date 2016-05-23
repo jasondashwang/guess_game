@@ -32,17 +32,17 @@ function playersGuessSubmission(){
 function lowerOrHigher(){
 	// add code here
 	if(playerGuess - winningNumber > 25){
-		return 'The real number is lower by a lot!';
+		return 'The real number is lower by more than 25!';
 	} else if(playerGuess - winningNumber > 10){
-		return 'The real number is significantly lower!';
+		return 'The real number is lower by less than 25!';
 	} else if(playerGuess - winningNumber < 10 && playerGuess - winningNumber > 0){
-		return 'The real number is lower by a little';
+		return 'The real number is lower by less than 10';
 	} else if(playerGuess - winningNumber > -10){
-		return 'The real number is higher by a little!';
+		return 'The real number is higher by less than 10!';
 	} else if(playerGuess - winningNumber > -25){
-		return 'The real number is significantly higher!';
+		return 'The real number is higher by less than 25!';
 	} else {
-		return 'The real number is higher by a lot!';
+		return 'The real number is higher by more than 25!';
 	}
 }
 

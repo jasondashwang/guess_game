@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 		if(playerGuess === 0){
 			alert('Please enter a number to guess!');
-		} else if(guesses === 1) {
+		} else if(guesses === 0) {
 			$('#result').text('You Lose!').addClass('failure');; 
 			$('#answerHolder').show();
 			$('#answer').text(winningNumber);
