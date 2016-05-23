@@ -1,10 +1,14 @@
 $(document).ready(function(){
 	playAgain();
 	var submission = function(){
-		playerGuess = playersGuessSubmission();
-		if(playerGuess > 100 || playerGuess < 1){
-			alert('Enter a number in the correct range!');
-		} else if(playerGuess === 0){
+		try{
+			playerGuess = playersGuessSubmission();
+		} catch(e) {
+			alert('Please enter a valid input!');
+			return;
+		}
+
+		if(playerGuess === 0){
 			alert('Please enter a number to guess!');
 		} else if(guesses === 1) {
 			$('#result').text('You Lose!').addClass('failure');; 

@@ -15,7 +15,16 @@ function generateWinningNumber(){
 
 function playersGuessSubmission(){
 	// add code here
-	return +$("#the-guess").val();
+	var number = +$("#the-guess").val();
+	console.log(number);
+	if(isNaN(number)){
+		throw "Error!";
+	} else if(number > 100 || number < 1){
+		throw "Error!";
+	} else {
+		return number;
+	}
+
 }
 
 // Determine if the next guess should be a lower or higher number
